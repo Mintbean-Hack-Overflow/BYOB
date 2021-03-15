@@ -1,0 +1,71 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***** End Reset **********************/
+
+$primary : rgb(0, 0, 0);
+$background: rgb(50, 50, 50);
+$text: rgb(199, 199, 199);
+
+
+button {
+    background-color: $primary;
+    color: $text;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.15em .25em;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: $primary;
+    background-color: $background
+}
+
+.round-corner {
+    border-radius: .25em;
+}
+
+.round-TL {
+    border-radius: .25em 0em 0em 0em;
+}
+
+.round-side {
+    border-radius: 1em;
+    padding: 0.15em .5em;
+}
+
+.round-left {
+    border-radius: 1em 0em 0em 1em;
+    padding: 0.15em .5em;
+}
+
+.round-right {
+    border-radius: 0em 1em 1em 0em;
+    padding: 0.15em .5em;
+}
+
+.round-TR {
+    border-radius: 0em .25em 0em 0em;
+}
+
+.round-BL {
+    border-radius: 0em 0em 0em .25em;
+}
+
+.round-BR {
+    border-radius: 0em 0em .25em 0em;
+}
+
+.round-top {
+    border-radius: .25em .25em 0em 0em;
+}
+
+.round-bottom {
+    border-radius: 0em 0em .25em .25em;
+}
