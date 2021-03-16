@@ -8,23 +8,56 @@
 }
 /***** End Reset **********************/
 
-$primary : rgb(0, 0, 0);
+$primary : rgb(68, 8, 235);
 $background: rgb(50, 50, 50);
 $text: rgb(199, 199, 199);
 
+$headerheight: 14em;
+$headerfoot: 8em;
 
-button {
+$contentwidth: 15%;
+
+body{
+    padding-top: $headerheight;
+    padding-bottom: 8em;
+}
+
+
+.button {
     background-color: $primary;
     color: $text;
     text-align: center;
     vertical-align: middle;
+    max-width: max-content;
     padding: 0.15em .25em;
     transition: 0.5s;
 }
 
-button:hover {
+.button:hover {
     color: $primary;
     background-color: $background
+}
+
+.header {
+    width: 100%;
+    height: $headerheight;
+    top: 0;
+    position: fixed;
+    padding: 1em $contentwidth;
+    background-color: $primary;
+}
+
+.footer {
+    width: 100%;
+    height: $footerheight;
+    bottom: 0;
+    position: fixed;
+    padding: 1em $contentwidth;
+    background-color: $primary;
+}
+
+.content {
+    padding: 0 $contentwidth;
 }
 
 .round-corner {
@@ -66,6 +99,8 @@ button:hover {
     border-radius: .25em .25em 0em 0em;
 }
 
-.round-bottom {
+.round-bot {
     border-radius: 0em 0em .25em .25em;
 }
+
+

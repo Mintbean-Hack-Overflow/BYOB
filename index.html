@@ -10,24 +10,28 @@
     </head>
     <body>
         <!-- headers; ordered lists; unordered lists; grids; cards; tables; buttons; et cetera. -->
-        <div class="container">
+        <header class="header"></header>
+        <div class="container content">
             <div>
-                <button>Button</button>
-                <button class="round-corner">.round-corner</button>
-                <button class="round-side">.round-side</button>
+                <button class="button">Button</button>
+                <button class="round-corner button">.round-corner</button>
+                <button class="round-side button">.round-side</button>
             </div>
             <div>
-                <button class="round-left">.round-left</button><button class="round-right">.round-right</button>
+                <button class="round-left button">.round-left</button><button class="round-right button">.round-right</button>
             </div>
-            <div>
-                <button class="round-top">.round-top</button>
-                <button class="round-bottom">.round-bottom</button>
+            <div class="stackem">
+                <button class="round-top button">.round-top</button>
+                <button class="round-bot button">.round-bot</button>
             </div>
-            <div>
-                <button class="round-TL">.round-TL</button><button class="round-TR">.round-TR</button>
-                <button class="round-BL">.round-BL</button><button class="round-BR">.round-BR</button>
+            <div class="stackem">
+                <span><button class="round-TL button">.round-TL</button><button class="round-TR button">.round-TR</button></span>
+                <span><button class="round-BL button">.round-BL</button><button class="round-BR button">.round-BR</button></span>
             </div>
         </div>
+        <footer class="footer">
+            
+        </footer>
         <script src="" async defer></script>
     </body>
 </html>

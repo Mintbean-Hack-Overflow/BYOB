@@ -10,6 +10,6 @@ div {
     margin: 1em;
 }
 
-.container div {
-
+.stackem {
+    display: grid;
 }

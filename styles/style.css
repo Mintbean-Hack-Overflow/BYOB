@@ -9,19 +9,49 @@
 }
 
 /***** End Reset **********************/
-button {
+body {
+  padding-top: 14em;
+  padding-bottom: 8em;
+}
+
+.button {
   background-color: black;
   color: #c7c7c7;
   text-align: center;
   vertical-align: middle;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   padding: 0.15em .25em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-button:hover {
+.button:hover {
   color: black;
   background-color: #323232;
+}
+
+.header {
+  width: 100%;
+  height: 14em;
+  top: 0;
+  position: fixed;
+  padding: 1em 15%;
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  height: 14em;
+  top: 0;
+  position: fixed;
+  padding: 1em 15%;
+  background-color: black;
+}
+
+.content {
+  padding: 0 15%;
 }
 
 .round-corner {
@@ -63,7 +93,7 @@ button:hover {
   border-radius: .25em .25em 0em 0em;
 }
 
-.round-bottom {
+.round-bot {
   border-radius: 0em 0em .25em .25em;
 }
 /*# sourceMappingURL=style.css.map */
