@@ -8,35 +8,16 @@
 }
 /***** End Reset **********************/
 
-$primary : rgb(68, 8, 235);
+$primary: rgb(255, 94, 0);
 $background: rgb(50, 50, 50);
-$text: rgb(199, 199, 199);
+$text: rgb(255, 193, 157);
 
-$headerheight: 14em;
-$headerfoot: 8em;
+$headerheight: 12em;
+$footerheight: 8em;
 
 $contentwidth: 15%;
 
-body{
-    padding-top: $headerheight;
-    padding-bottom: 8em;
-}
 
-
-.button {
-    background-color: $primary;
-    color: $text;
-    text-align: center;
-    vertical-align: middle;
-    max-width: max-content;
-    padding: 0.15em .25em;
-    transition: 0.5s;
-}
-
-.button:hover {
-    color: $primary;
-    background-color: $background
-}
 
 .header {
     width: 100%;
@@ -56,8 +37,32 @@ body{
     background-color: $primary;
 }
 
+.button {
+    background-color: $primary;
+    color: $text;
+    text-align: center;
+    vertical-align: middle;
+    max-width: max-content;
+    height: max-content;
+    padding: 0.15em .25em;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: $primary;
+    background-color: $background
+}
+
 .content {
     padding: 0 $contentwidth;
+    background-color: 180 + $primary;
+    padding-top: $headerheight;
+    padding-bottom: $footerheight;
+    height: 100vh;
+}
+
+.menuburger {
+    color: $text;
 }
 
 .round-corner {

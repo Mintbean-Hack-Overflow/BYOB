@@ -4,9 +4,10 @@ button {
 
 .container {
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-div {
+.container div {
     margin: 1em;
 }
 
