@@ -12,12 +12,12 @@ $primary: rgb(255, 94, 0);
 $background: rgb(50, 50, 50);
 $text: rgb(255, 193, 157);
 
-$headerheight: 12em;
+$headerheight: 10em;
 $footerheight: 8em;
 
 $contentwidth: 15%;
 
-
+/*** header styles ***/
 
 .header {
     width: 100%;
@@ -28,6 +28,51 @@ $contentwidth: 15%;
     background-color: $primary;
 }
 
+.logo {
+    color: $text;
+    font-size: $headerheight * 0.65;
+    display: inline-block;
+    position: absolute;
+    left: $contentwidth;
+}
+
+.headtext {
+    color: $text;
+    font-size: $headerheight * 0.6;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    height: inherit;
+    position: absolute;
+    right: $contentwidth;
+    top: 0;
+}
+
+.menuburger {
+    background: -webkit-gradient(linear, left top, left bottom, from(90 + $background), to($text));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: $headerheight * 0.5;
+    vertical-align: middle;
+}
+
+.menu-ul {
+    // visibility: hidden;
+    display: none;
+    color: text;
+}
+
+.menuburger:hover + .menu-ul {
+    position: relative;
+    display: block;
+}
+
+/*** footer styles ***/
+
 .footer {
     width: 100%;
     height: $footerheight;
@@ -36,6 +81,16 @@ $contentwidth: 15%;
     padding: 1em $contentwidth;
     background-color: $primary;
 }
+
+.content {
+    padding: 0 $contentwidth;
+    background-color: 180 + $primary;
+    padding-top: $headerheight;
+    padding-bottom: $footerheight;
+    height: 100vh;
+}
+
+/** button styles **/
 
 .button {
     background-color: $primary;
@@ -53,17 +108,7 @@ $contentwidth: 15%;
     background-color: $background
 }
 
-.content {
-    padding: 0 $contentwidth;
-    background-color: 180 + $primary;
-    padding-top: $headerheight;
-    padding-bottom: $footerheight;
-    height: 100vh;
-}
-
-.menuburger {
-    color: $text;
-}
+/** corner styles **/
 
 .round-corner {
     border-radius: .25em;
